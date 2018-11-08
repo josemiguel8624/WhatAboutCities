@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <title>
+      What About Cities
+    </title>
+  </head>
+
+  <body>
+
+    <nav class="light-blue lighten-1" role="navigation">
+      <!-- Title on body -->
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">WAC</a>
+      </div>
+    </nav>
+
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br><br>
+        <h1 class="header center blue-text">What About Cities</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A mashup based website oriented to bring the most relevant information of any city around the world in just one page.</h5>
+        </div>
+
+        <!-- Search bar -->
+        <div class="container">
+          <input id="searchTerm" name="search" placeholder="Type City Name...">
+        </div>
+      </div>
+    </div>
+
+    <div id="error" class="row">
+    </div>
+
+    <!-- Main area to info rece -->
+    <div id="output" class="row">
+      <div class="col s1">
+      </div>
+
+      <!-- Info table -->
+      <div class="col s6">
+        <!-- Title -->
+        <div class="col s12">
+          <h4 id="cityTitle" class="left blue-text"></h4>
+        </div>
+        <!-- Gral info-->
+        <div class="col s12">
+          <h5 id="gralInfo"></h5>
+          <p id="wikiResult" class="black-text"></p>
+          <p id="baiduResult" class="black-text"></p>
+          <p id="govResult" class="black-text"></p>
+        </div>
+
+        <!-- Economy -->
+        <div class="col s12">
+        </div>
+        <!-- Environment -->
+        <div class="col s12">
+        </div>
+
+
+        <!-- Society -->
+        <div id="news" class="col s12">
+
+        </div>
+        <!-- Technology -->
+        <div class="col s12">
+        </div>
+
+      </div>
+
+      <!-- Map -->
+      <div class="col s4">
+      </div>
+
+      <div class="col s1">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer blue">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About the author</h5>
+            <p class="grey-text text-lighten-4">José Miguel Tejeda Martínez</p>
+            <p class="grey-text text-lighten-4">1659216</p>
+
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Site facts</h5>
+            <ul>
+              <li><a class="white-text">JavaScript progressing</a></li>
+              <li><a class="red-text" href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi">Requires CORS! (Chrome)</a></li>
+              <li><a class="white-text">HTML5</a></li>
+              <li><a class="white-text">Server processing free</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">APIs</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Maps</a></li>
+              <li><a class="white-text" href="#https://www.mediawiki.org/wiki/API:Main_page/en">Wikipedia</a></li>
+              <li><a class="white-text" href="#!">Baidu</a></li>
+              <li><a class="white-text" href="#https://developer.nytimes.com/">NYTimes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Front-end based on <a class="black-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
