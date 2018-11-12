@@ -19,3 +19,7 @@ input {
 }
 
 /*Map*/
+#map {
+  width: relative;
+  height: 300px
+}

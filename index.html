@@ -12,6 +12,10 @@
 
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
+    <!-- Maps API -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+
     <title>
       What About Cities
     </title>
@@ -49,7 +53,7 @@
       </div>
 
       <!-- Info table -->
-      <div class="col s6">
+      <div class="col m6 s12">
         <!-- Title -->
         <div class="col s12">
           <h4 id="cityTitle" class="left blue-text"></h4>
@@ -58,7 +62,7 @@
         <div class="col s12">
           <h5 id="gralInfo"></h5>
           <p id="wikiResult" class="black-text"></p>
-          <p id="baiduResult" class="black-text"></p>
+          <p id="bingResult" class="black-text"></p>
           <p id="govResult" class="black-text"></p>
         </div>
 
@@ -81,11 +85,14 @@
       </div>
 
       <!-- Map -->
-      <div class="col s4">
+      <div id="map" class="col m4 s12">
       </div>
 
       <div class="col s1">
       </div>
+    </div>
+
+    <div id="loader" class="row center">
     </div>
 
     <!-- Footer -->
@@ -110,10 +117,10 @@
           <div class="col l3 s12">
             <h5 class="white-text">APIs</h5>
             <ul>
-              <li><a class="white-text" href="#!">Maps</a></li>
-              <li><a class="white-text" href="#https://www.mediawiki.org/wiki/API:Main_page/en">Wikipedia</a></li>
-              <li><a class="white-text" href="#!">Baidu</a></li>
-              <li><a class="white-text" href="#https://developer.nytimes.com/">NYTimes</a></li>
+              <li><a class="white-text" href="https://leafletjs.com/">Leaflet Maps</a></li>
+              <li><a class="white-text" href="https://www.mediawiki.org/wiki/API:Main_page/en">Wikipedia</a></li>
+              <li><a class="white-text" href="https://www.bing.com/?setlang=en">Bing</a></li>
+              <li><a class="white-text" href="https://developer.nytimes.com/">NYTimes</a></li>
             </ul>
           </div>
         </div>
@@ -128,6 +135,6 @@
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/init.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/init.js"></script>
   </body>
 </html>
